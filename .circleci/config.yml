@@ -9,12 +9,10 @@ jobs:
       - checkout
       - run:
           name: Start tests
-          command: |
-            ssh -oStrictHostKeyChecking=no -v $USER@$IP "./test.sh"
+          command: ssh -oStrictHostKeyChecking=no -v $USER@$IP "./test.sh"
       - run:
           name: Start app
-          command: |
-              ssh -oStrictHostKeyChecking=no -v $USER@$IP "./deploy.sh"
+          command: ssh -oStrictHostKeyChecking=no -v $USER@$IP "./deploy.sh"
 
 # Orchestrate our job run sequence
 workflows:
