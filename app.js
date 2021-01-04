@@ -15,7 +15,7 @@ app.get('/', (req, res) => {
 })
 
 app.post('/', (req, res) => {
-  res.send({ msg: 'hello world from post metho2d' })
+  res.send({ msg: 'hello world from post method' })
 })
 
 app.listen(port, () => {
