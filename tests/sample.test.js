@@ -6,7 +6,7 @@ describe('Post Endpoint', () => {
       .post('/')
       .send()
     expect(res.statusCode).toEqual(200)
-    expect(res.body.msg).toEqual('hello world from post broken method')
+    expect(res.body.msg).toEqual('hello world from post method')
     done()
   })
 })
